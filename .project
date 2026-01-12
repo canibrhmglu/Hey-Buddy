@@ -34,11 +34,15 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>WebContent/sand.jpg</name>
-			<type>1</type>
-			<location>/Users/canibrahimoglu/Desktop/sand.jpg</location>
-		</link>
-	</linkedResources>
+	<filteredResources>
+		<filter>
+			<id>1763991316202</id>
+			<name></name>
+			<type>30</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
 </projectDescription>

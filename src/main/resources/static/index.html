@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey Buddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div id="login-screen" class="screen active">
+            <div class="glass-card">
+                <h1>Hey Buddy</h1>
+                <p class="subtitle">Welcome back</p>
+                <form id="login-form">
+                    <div class="input-group">
+                        <input type="text" id="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                    <p class="switch-auth">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Signup Screen -->
+        <div id="signup-screen" class="screen">
+            <div class="glass-card">
+                <h1>Create Account</h1>
+                <p class="subtitle">Join the community</p>
+                <form id="signup-form">
+                    <div class="input-group">
+                        <input type="text" id="signup-name" placeholder="First Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="signup-lastname" placeholder="Last Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="signup-username" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Sign Up</button>
+                    <p class="switch-auth">Already have an account? <a href="#" id="show-login">Login</a></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Chat Screen -->
+        <div id="chat-screen" class="screen">
+            <div class="chat-container glass-panel">
+                <div class="sidebar">
+                    <div class="user-profile">
+                        <div class="avatar" id="current-user-avatar"></div>
+                        <h3 id="current-user-name">User</h3>
+                        <button id="logout-btn" class="btn-icon">Logout</button>
+                    </div>
+                    <div class="users-list">
+                        <h4>Online Users</h4>
+                        <ul id="online-users">
+                            <!-- Users will be populated here -->
+                            <li class="user-item active">
+                                <div class="avatar">G</div>
+                                <div class="user-info">
+                                    <span class="name">Global Chat</span>
+                                    <span class="status">online</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chat-area">
+                    <div class="chat-header">
+                        <h3 id="chat-title">Global Chat</h3>
+                    </div>
+                    <div class="messages-container" id="messages-container">
+                        <!-- Messages will appear here -->
+                    </div>
+                    <div class="input-area">
+                        <input type="text" id="message-input" placeholder="Type a message...">
+                        <button id="send-btn" class="btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
